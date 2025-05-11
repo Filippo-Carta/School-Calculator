@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/teacherLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"> <!-- Set background to white -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Select Calculator Mode"
+        android:textColor="#000000" 
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/modeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1D1D1D"
+        android:entries="@array/calculator_modes"
+        android:textColor="#000000" /> <!-- Set text color to black for spinner -->
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Time (minutes)"
+        android:inputType="number"
+        android:textColor="#000000" /> <!-- Set text color to black for EditText -->
+        <!-- Set hint text color to black -->
+        android:hintTextColor="#000000" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Set Password"
+        android:inputType="textPassword"
+        android:textColor="#000000" /> <!-- Set text color to black for password EditText -->
+        <!-- Set hint text color to black --><![CDATA[
+        android:hintTextColor="#000000" />
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:text="Ogni movimento dell' Utente verra registrato e mandato a un server esterno. Cliccando &quot;START SESSION&quot; lo studente accetta i termini e condizioni (chiedere al Prof. presente in aula)" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Session"
+        android:textColor="#000000" />
+
+    <!-- Set text color to black for Button -->
+
+</LinearLayout>

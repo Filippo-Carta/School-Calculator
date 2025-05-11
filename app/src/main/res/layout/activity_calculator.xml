@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/calculationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#AAAAAA"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:paddingTop="24dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:gravity="end"
+        android:paddingBottom="16dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:layout_gravity="bottom">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnAC" style="@style/CalcButton.Gray" android:text="AC" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnSign" style="@style/CalcButton.Gray" android:text="±" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnPercent" style="@style/CalcButton.Gray" android:text="%" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnDivide" style="@style/CalcButton.Orange" android:text="÷" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btn7" style="@style/CalcButton.Dark" android:text="7" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn8" style="@style/CalcButton.Dark" android:text="8" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn9" style="@style/CalcButton.Dark" android:text="9" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnMultiply" style="@style/CalcButton.Orange" android:text="×" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btn4" style="@style/CalcButton.Dark" android:text="4" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn5" style="@style/CalcButton.Dark" android:text="5" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn6" style="@style/CalcButton.Dark" android:text="6" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnSubtract" style="@style/CalcButton.Orange" android:text="−" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btn1" style="@style/CalcButton.Dark" android:text="1" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn2" style="@style/CalcButton.Dark" android:text="2" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btn3" style="@style/CalcButton.Dark" android:text="3" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnAdd" style="@style/CalcButton.Orange" android:text="+" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/btnCalc"
+            style="@style/CalcButton.Dark"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="@drawable/button_round"
+            android:text="EXIT
+" />
+        <Button android:id="@+id/btn0" style="@style/CalcButton.Dark" android:text="0" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnDot" style="@style/CalcButton.Dark" android:text="." android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+        <Button android:id="@+id/btnEquals" style="@style/CalcButton.Orange" android:text="=" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:background="@drawable/button_round" />
+    </GridLayout>
+</LinearLayout>

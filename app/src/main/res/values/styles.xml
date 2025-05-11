@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Stile base -->
+    <style name="CalcButton.Base" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Variante arancione -->
+    <style name="CalcButton.Orange" parent="CalcButton.Base">
+        <item name="android:backgroundTint">#FF9500</item>
+    </style>
+
+    <!-- Variante grigia -->
+    <style name="CalcButton.Gray" parent="CalcButton.Base">
+        <item name="android:backgroundTint">#A5A5A5</item>
+    </style>
+
+    <!-- Variante scura -->
+    <style name="CalcButton.Dark" parent="CalcButton.Base">
+        <item name="android:backgroundTint">#333333</item>
+    </style>
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:backgroundTint">#333333</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

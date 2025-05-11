@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="calculator_modes">
+        <item>Basic</item>
+        <item>Scientific</item>
+    </string-array>
+
+</resources>
